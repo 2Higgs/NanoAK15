@@ -10,27 +10,17 @@ NanoAOD production for AK15 jets.
 
 ## Run 3 (nanoAODv12)
 
-- Get release
 ```bash
+#Get CMSSW version for run 3
 cmsrel CMSSW_13_0_13
 cd CMSSW_13_0_13/src/
 cmsenv
-git cms-checkout-topic cmantill:13_0_13_ParT
-wget https://coli.web.cern.ch/coli/tmp/.240120-181907_ak8_stage2/model.onnx -O $CMSSW_BASE/src/RecoBTag/ONNXRuntime/data/ParticleTransformerAK8/GlobalMD/V02/model.onnx
-scram b -j 10
-```
 
-- Clone repo
-```bash
-git clone https://github.com/cmantill/generateCMS.git -b ParT
-cd generateCMS/nanoaod_pnetlegacy/
-```
+#Set up customized nanoAOD producers
+git clone git@github.com:2Higgs/NanoAK15.git PhysicsTools/NanoAK15
 
-- Edit `submit_nanoaod.py` with the samples to submit
- 
-- To submit samples, specify era, key and username, e.g.:
-```bash
-python3 submit_nanoaod.py --era 2022EE --key mc --username cmantill
+#Compile
+scram b -j16
 ```
 
 
