@@ -15,6 +15,8 @@ NanoAOD production for AK15 jets.
 cmsrel CMSSW_13_0_13
 cd CMSSW_13_0_13/src/
 cmsenv
+git cms-checkout-topic 2Higgs:13_0_13_AK15
+
 
 #Set up customized nanoAOD producers
 git clone git@github.com:2Higgs/NanoAK15.git PhysicsTools/NanoAK15
