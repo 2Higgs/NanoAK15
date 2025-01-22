@@ -23,6 +23,9 @@ git clone git@github.com:2Higgs/NanoAK15.git PhysicsTools/NanoAK15
 scram b -j16
 ```
 
+# Useful links:
 
+1. [Raghav's setup](https://github.com/rkansal47/generateCMS/tree/b737d10537f807e1b549153889532d5a0edc39d6/nanoaod_pnetlegacy)
+2. [Congiao custom nanotuples for ak15](https://github.com/colizz/NanoTuples/tree/dev-ak15tagger-UL)
 
 
